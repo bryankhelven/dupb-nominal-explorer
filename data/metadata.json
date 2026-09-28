@@ -1,0 +1,15 @@
+{
+  "resource_id": "DUPB_NOMINAL_EXPLORER",
+  "display_name": "DUPB — Nomes e predicação por acepção",
+  "version": "8.4.0-forensic-metadata-leak-closure",
+  "source": "DUPB",
+  "source_tier": "SILVER",
+  "total_lemmas": 33518,
+  "has_predicator_lemmas": 3899,
+  "n_only_lemmas": 29619,
+  "senses": 55792,
+  "predicator_senses": 7007,
+  "non_predicator_senses": 48785,
+  "generated_text": false,
+  "paraphrased_text": false
+}

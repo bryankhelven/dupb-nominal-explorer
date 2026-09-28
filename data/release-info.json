@@ -1,0 +1,13 @@
+{
+  "release": "1",
+  "date": "27 set. 2026",
+  "total_lemmas": 33518,
+  "has_predicator_lemmas": 3899,
+  "n_only_lemmas": 29619,
+  "senses": 55792,
+  "predicator_senses": 7007,
+  "non_predicator_senses": 48785,
+  "dataset_sha256": "7154a515ca002d62bdf478dd517a5995d9f64fb55bbdd797984f512eeffefb29",
+  "author": "Bryan Khelven",
+  "email": "bryankhelven@ieee.org"
+}

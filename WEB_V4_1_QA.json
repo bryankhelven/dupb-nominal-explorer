@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "release": "DUPB_NOMINAL_EXPLORER_WEB_V4_1",
+  "base": "WEB_V4_APPROVED",
+  "scientific_data_modified": false,
+  "changes": {
+    "landing_resource_linguistico_computacional_label_removed": true,
+    "about_full_dictionary_title_added": true,
+    "about_dictionary_bibliographic_identity": "Dicionário de usos do português do Brasil — Francisco S. Borba — Ática — 2002",
+    "favicon_open_green_book_added": true,
+    "approved_v4_search_filters_ui_preserved": true
+  }
+}
