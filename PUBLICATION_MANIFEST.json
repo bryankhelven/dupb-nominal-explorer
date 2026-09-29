@@ -15,7 +15,8 @@
     "data/entries.json": "fcbca29a70f6f4c9cc70861870fbbf322e73802f914db73c784839973f96a695",
     "data/senses.jsonl": "7154a515ca002d62bdf478dd517a5995d9f64fb55bbdd797984f512eeffefb29",
     "data/metadata.json": "5b902361299271b764a06de71dc30411c8e9f009b77e46f3c74e6c2936aedc86",
-    "data/entries.js": "b73c0d036767d02265a3114b0791498d20e6f3c01f2a573afa2b73523abdfaf4"
+    "data/entries.js": "b73c0d036767d02265a3114b0791498d20e6f3c01f2a573afa2b73523abdfaf4",
+    "public_jsonl": "7154a515ca002d62bdf478dd517a5995d9f64fb55bbdd797984f512eeffefb29"
   },
   "valency": {
     "included": false,

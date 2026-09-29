@@ -33,9 +33,9 @@ function list(){const r=rows(),names=r.length,vis=r.reduce((a,e)=>a+visibleCount
 
 function current(){return E.find(x=>x.lemma===sel)}
 function save(filename,text,type){const blob=new Blob([text],{type}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
-function fname(s){return C.fold(s).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'entrada'}
-function exportJSON(){const e=current();if(e)save(`${fname(e.lemma)}.json`,JSON.stringify(e,null,2)+'\n','application/json;charset=utf-8')}
-function exportJSONL(){const e=current();if(!e)return;const lines=[];e.entries.forEach(g=>g.senses.forEach(s=>lines.push(JSON.stringify({lemma:e.lemma,entry:g.entry,...s}))));save(`${fname(e.lemma)}.jsonl`,lines.join('\n')+'\n','application/x-ndjson;charset=utf-8')}
+function fname(s){return String(s||'').normalize('NFC').trim().replace(/[\u0000-\u001f<>:"/\\\\|?*]+/g,'-').replace(/\s+/g,'-').replace(/-+/g,'-').replace(/^[ .-]+|[ .-]+$/g,'')||'entrada'}
+function exportJSON(){const e=current();if(e)save(`${fname(e.lemma)}-nominal-explorer.json`,JSON.stringify(e,null,2)+'\n','application/json;charset=utf-8')}
+function exportJSONL(){const e=current();if(!e)return;const lines=[];e.entries.forEach(g=>g.senses.forEach(s=>lines.push(JSON.stringify({lemma:e.lemma,entry:g.entry,...s}))));save(`${fname(e.lemma)}-nominal-explorer.jsonl`,lines.join('\n')+'\n','application/x-ndjson;charset=utf-8')}
 function updateUrl(l){const u=new URL(location.href);u.searchParams.set('lemma',l);history.pushState({lemma:l},'',u)}
 function entrySummary(e){
   const ss=senses(e),p=predCount(e),n=ss.length-p;
