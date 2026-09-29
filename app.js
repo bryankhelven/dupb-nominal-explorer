@@ -1,5 +1,5 @@
 (()=>{
-const E=window.DUPB_ENTRIES||[],M=window.DUPB_METADATA||{},C=window.DUPB_COMMON;
+const E=window.DUPB_ENTRIES||[],M=window.DUPB_METADATA||window.DUPB_RELEASE_INFO||{},C=window.DUPB_COMMON;
 let pf='all',sf='all',alpha='all',sel=null,renderRows=[],rendered=0,observer=null;
 
 const senses=e=>e.entries.flatMap(x=>x.senses);
