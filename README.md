@@ -7,8 +7,8 @@ Interface web para consulta de nomes e predicação por acepção no **Dicionár
 A versão publicada contém:
 
 - **33.518** nomes;
-- **55.792** acepções;
-- **7.007** acepções predicadoras;
+- **55.793** acepções;
+- **7.008** acepções predicadoras;
 - **48.785** acepções não predicadoras.
 
 A numeração das acepções pertence ao DUPB.
@@ -43,4 +43,4 @@ As valências nominais não fazem parte desta versão. A interface está prepara
 
 ## Dados
 
-Os arquivos científicos usados pela interface são os mesmos da release congelada do recurso. Alterações na camada web não devem alterar os dados linguísticos sem uma nova versão científica.
+Os arquivos científicos usados pela interface correspondem ao candidate auditado sob `ORCH_RECON_000208`. Alterações na camada web não devem alterar os dados linguísticos sem uma nova authority científica.

@@ -7,16 +7,16 @@
   "web_release": "WEB_V4_1_APPROVED",
   "scientific_counts": {
     "lemmas": 33518,
-    "senses": 55792,
-    "predicator_senses": 7007,
+    "senses": 55793,
+    "predicator_senses": 7008,
     "non_predicator_senses": 48785
   },
   "data_sha256": {
-    "data/entries.json": "fcbca29a70f6f4c9cc70861870fbbf322e73802f914db73c784839973f96a695",
-    "data/senses.jsonl": "7154a515ca002d62bdf478dd517a5995d9f64fb55bbdd797984f512eeffefb29",
-    "data/metadata.json": "5b902361299271b764a06de71dc30411c8e9f009b77e46f3c74e6c2936aedc86",
-    "data/entries.js": "b73c0d036767d02265a3114b0791498d20e6f3c01f2a573afa2b73523abdfaf4",
-    "public_jsonl": "7154a515ca002d62bdf478dd517a5995d9f64fb55bbdd797984f512eeffefb29"
+    "data/dupb-nominal-explorer.json": "a2acfdf940b10a036a394862ad1037c77d9204777e8bdfe3bd19c79a9c312d40",
+    "data/dupb-nominal-explorer.jsonl": "ec3ca334d49f21d7611f839f7bdeaef17d8668ba75b3681aa14901c6821e56f4",
+    "data/metadata.json": "022c8f3f2c30d0efaa24a30b5f40a5a0c46676bafaca08d670843380b37035f5",
+    "data/entries.js": "c3df8c2254bb5f718a34f0fdcae2d818f04fdf9ba2a0edba4baaa2d54f2424fe",
+    "public_jsonl": "ec3ca334d49f21d7611f839f7bdeaef17d8668ba75b3681aa14901c6821e56f4"
   },
   "valency": {
     "included": false,
