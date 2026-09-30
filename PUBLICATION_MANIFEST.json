@@ -4,22 +4,23 @@
   "publication_target": "GitHub Pages",
   "default_branch": "main",
   "pages_mode": "GitHub Actions",
-  "web_release": "WEB_V4_1_APPROVED",
+  "web_release": "ORCH215_ALIGNED_PUBLIC_PRODUCT",
   "scientific_counts": {
-    "lemmas": 33518,
-    "senses": 55793,
-    "predicator_senses": 7008,
-    "non_predicator_senses": 48785
+    "lemmas": 33508,
+    "senses": 55572,
+    "predicator_senses": 6504,
+    "non_predicator_senses": 49068
   },
   "data_sha256": {
-    "data/dupb-nominal-explorer.json": "a2acfdf940b10a036a394862ad1037c77d9204777e8bdfe3bd19c79a9c312d40",
-    "data/dupb-nominal-explorer.jsonl": "ec3ca334d49f21d7611f839f7bdeaef17d8668ba75b3681aa14901c6821e56f4",
-    "data/metadata.json": "022c8f3f2c30d0efaa24a30b5f40a5a0c46676bafaca08d670843380b37035f5",
-    "data/entries.js": "c3df8c2254bb5f718a34f0fdcae2d818f04fdf9ba2a0edba4baaa2d54f2424fe",
-    "public_jsonl": "ec3ca334d49f21d7611f839f7bdeaef17d8668ba75b3681aa14901c6821e56f4"
+    "data/dupb-nominal-explorer.json": "d5623a18f5a07f6671a6d198ee42c540f68622683570cc67b2ffbb87ec965ba3",
+    "data/dupb-nominal-explorer.jsonl": "5873bcc5dc382cb2f32c89a574e01c0e70c00ab51bc859c1b345714bd63347ac",
+    "data/metadata.json": "5cea7a55cddc3ac05161216d7eb47b048a0e5c1fdee075d761294629f7270acc",
+    "data/ROW_LINEAGE_ORCH213.tsv": "f21d8eb24c01ce215ca8515e7f9b28cc228b0a29bb92a5f318f2fba2890b73d4",
+    "data/entries.js": "0769b54c62f5c097ba96a93a3a098ada0f27e5c38c8995021f09581959223992",
+    "public_jsonl": "5873bcc5dc382cb2f32c89a574e01c0e70c00ab51bc859c1b345714bd63347ac"
   },
   "valency": {
     "included": false,
-    "state": "PENDING_SEPARATE_AUTHORITY"
+    "state": "PREAUTHORIZED_PENDING_SUCCESSFUL_ORCH215_DEPLOYMENT_VERIFICATION"
   }
 }

@@ -6,10 +6,10 @@ Interface web para consulta de nomes e predicação por acepção no **Dicionár
 
 A versão publicada contém:
 
-- **33.518** nomes;
-- **55.793** acepções;
-- **7.008** acepções predicadoras;
-- **48.785** acepções não predicadoras.
+- **33.508** nomes;
+- **55.572** acepções;
+- **6.504** acepções predicadoras;
+- **49.068** acepções não predicadoras.
 
 A numeração das acepções pertence ao DUPB.
 
