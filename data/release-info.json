@@ -7,7 +7,12 @@
   "senses": 55572,
   "predicator_senses": 6504,
   "non_predicator_senses": 49068,
-  "dataset_sha256": "5873bcc5dc382cb2f32c89a574e01c0e70c00ab51bc859c1b345714bd63347ac",
+  "valency_senses": 6504,
+  "valency_v1": 2435,
+  "valency_v2": 3682,
+  "valency_v3": 374,
+  "valency_v4": 13,
+  "dataset_sha256": "43d1ed7941c817323c86453ebc13a25bfbec8d0e5d9e09b3d6cc12f6212382ed",
   "author": "Bryan Khelven",
   "email": "bryankhelven@ieee.org"
 }

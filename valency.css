@@ -1,0 +1,17 @@
+
+/* Valency UI — ORCH215 candidate */
+.badges{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.badge.valency{font-weight:850;letter-spacing:.04em;border:1px solid currentColor;background:transparent}
+.valency-box{margin-top:12px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+.valency-label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted);margin-bottom:7px}
+.argument-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.arg-chip{display:inline-block;padding:4px 7px;border-radius:7px;background:var(--paper);border:1px solid var(--line);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;overflow-wrap:anywhere}
+.arg-sep{color:var(--muted);font-weight:700}
+.arg-note{font-size:12px;color:var(--muted);font-style:italic}
+.valency-filter{display:grid;grid-template-columns:1.25fr repeat(4,1fr);gap:0;width:100%;overflow:hidden;border:1px solid var(--line);border-radius:10px}
+.valency-filter button{border:0;border-right:1px solid var(--line);border-radius:0!important;margin:0!important;padding:8px 5px;background:var(--paper);color:var(--text);cursor:pointer;font-size:11px}
+.valency-filter button:last-child{border-right:0}.valency-filter button.on{background:var(--accent);color:var(--paper)}
+:root[data-theme="dark"] .valency-filter button.on{color:#132018}
+.valency-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.valency-summary .info-card b{font-size:24px}
+@media(max-width:560px){.valency-filter{grid-template-columns:1fr 1fr 1fr}.valency-filter button{border-bottom:1px solid var(--line)}.argument-row{align-items:flex-start}.valency-summary{grid-template-columns:1fr 1fr}}

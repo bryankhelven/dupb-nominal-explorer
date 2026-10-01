@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DUPB Nominal Explorer</title><meta name="description" content="Consulta de nomes e predicação por acepção no DUPB.">
-<script src="theme.js"></script><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body>
-<header class="topbar"><div class="brand"><a href="index.html">DUPB Nominal Explorer</a><span>Nomes e predicação por acepção</span></div><nav class="top-actions">
+<title>DUPB Nominal Explorer</title><meta name="description" content="Consulta de nomes, predicação e valência por acepção no DUPB.">
+<script src="theme.js"></script><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="valency.css"></head><body>
+<header class="topbar"><div class="brand"><a href="index.html">DUPB Nominal Explorer</a><span>Nomes, predicação e valência por acepção</span></div><nav class="top-actions">
 <a class="nav-btn" href="about.html">Sobre</a><a class="nav-btn" href="stats.html">Estatísticas</a><a class="nav-btn" href="download.html">Dados e citação</a><button class="theme-btn icon-btn" data-theme-toggle type="button" aria-label="Alternar tema"></button>
 </nav></header>
 <main class="explorer">
 <aside class="filters">
-<div class="search-block"><label for="q">Buscar nome ou acepção</label><input id="q" type="search" autocomplete="off" placeholder="Ex.: acordo, abandono, concordância"><p class="hint">Digite para filtrar diretamente a lista abaixo. O lema exato aparece primeiro.</p></div>
+<div class="search-block"><label for="q">Buscar nome, acepção ou argumento</label><input id="q" type="search" autocomplete="off" placeholder="Ex.: acordo, V3, ARG2, beneficiário"><p class="hint">A busca também considera valência e estrutura argumental.</p></div>
 <details class="sidebar-section" open><summary>Filtros</summary><div class="sidebar-section-body">
 <p class="lab">Filtro de nomes</p><div id="profiles" class="profile-options" role="group" aria-label="Perfil dos nomes">
 <button data-p="all" class="on"><small class="facet-count"></small><span class="facet-label">Todos os nomes</span></button>
@@ -15,14 +15,15 @@
 <button data-p="allS"><small class="facet-count"></small><span class="facet-label">Com todos os sentidos predicadores</span></button>
 <button data-p="mixed"><small class="facet-count"></small><span class="facet-label">Com sentidos dos dois tipos</span></button>
 <button data-p="nonly"><small class="facet-count"></small><span class="facet-label">Sem sentidos predicadores</span></button></div>
-<p class="lab">Acepções exibidas</p><div id="senseFilters" class="chips segmented" role="group" aria-label="Acepções exibidas"><button data-s="all" class="on">Todas as acepções</button><button data-s="S">Predicadoras</button><button data-s="N">Não predicadoras</button></div>
+<p class="lab">Acepções exibidas</p><div id="senseFilters" class="chips segmented" role="group" aria-label="Acepções exibidas"><button data-s="all" class="on">Todas</button><button data-s="S">Predicadoras</button><button data-s="N">Não predicadoras</button></div>
+<p class="lab">Valência</p><div id="valencyFilters" class="chips valency-filter" role="group" aria-label="Filtrar por valência"><button data-v="all" class="on">Todas</button><button data-v="V1">V1</button><button data-v="V2">V2</button><button data-v="V3">V3</button><button data-v="V4">V4</button></div>
 <div class="two-cols"><div><p class="lab">Mínimo de acepções</p><select id="minSenses"><option value="1">1</option><option>2</option><option>3</option><option>5</option><option>10</option></select></div><div><p class="lab">Máximo de acepções</p><select id="maxSenses"><option value="999">Sem máximo</option><option>1</option><option>2</option><option>3</option><option>5</option><option>10</option><option>20</option></select></div></div>
 </div></details>
 <details class="sidebar-section"><summary>Navegação alfabética</summary><div class="sidebar-section-body"><div id="alphabet" class="alphabet"></div></div></details>
 <div id="activeFilters" class="active-filters" hidden></div><div id="count" aria-live="polite"></div><div id="list" class="lexical-list"></div><div id="listSentinel" class="list-sentinel" aria-hidden="true"></div>
 </aside>
 <section id="content">
-<div id="intro"><h1>DUPB Nominal Explorer</h1><p class="subtitle">Consulta de nomes e predicação por acepção no DUPB.</p><p class="scope">O recurso apresenta as acepções nominais do DUPB e sua classificação quanto à predicação. A numeração das acepções pertence ao DUPB.</p><div id="stats"></div><div class="page-links"><a href="about.html">Sobre e metodologia</a><a href="stats.html">Estatísticas</a><a href="download.html">Dados e citação</a></div></div>
+<div id="intro"><h1>DUPB Nominal Explorer</h1><p class="subtitle">Consulta de nomes, predicação e valência por acepção no DUPB.</p><p class="scope">Cada acepção predicadora apresenta sua valência lexical e estrutura argumental. A classificação e a valência são representadas por acepção.</p><div id="stats"></div><div class="page-links"><a href="about.html">Sobre e metodologia</a><a href="stats.html">Estatísticas</a><a href="download.html">Dados e citação</a></div></div>
 <div id="entry" hidden><p class="eyebrow">Entrada nominal</p><div class="entry-head"><div><h1 id="title"></h1><p id="summary"></p></div><div class="entry-data"><span>Exportar este nome:</span><button id="jsonOne">JSON</button><button id="jsonlOne">JSONL</button></div></div><div class="entry-body"><div id="groups"></div><aside class="lexical"><h2>Ficha lexical</h2><dl id="lexicalData"></dl><div class="lexical-actions"><button id="copyLink" class="quiet-action">Copiar link</button><details class="cite-menu"><summary>Citar esta entrada</summary><div class="cite-menu-body"><button id="copyCitation" class="quiet-action">Copiar referência</button><button id="copyBibtex" class="quiet-action">Copiar BibTeX</button></div></details></div></aside></div></div>
 </section></main>
 <footer>DUPB Nominal Explorer · Release 1 · Bryan Khelven · <a href="mailto:bryankhelven@ieee.org">bryankhelven@ieee.org</a></footer>

@@ -1,26 +1,32 @@
 {
   "repository_name_recommended": "dupb-nominal-explorer",
-  "github_owner": "bryankhelven",
-  "publication_target": "GitHub Pages",
-  "default_branch": "main",
-  "pages_mode": "GitHub Actions",
-  "web_release": "ORCH215_ALIGNED_PUBLIC_PRODUCT",
+  "source_public_head": "1cca1e781ee34eb31789001e19cd9fed0089c31b",
+  "candidate_type": "VALENCY_UI_INTEGRATION",
+  "authority_population": "ORCH_RECON_000215",
+  "authority_valency": "ORCH_RECON_000211",
+  "deployment_authorized": true,
   "scientific_counts": {
     "lemmas": 33508,
     "senses": 55572,
     "predicator_senses": 6504,
-    "non_predicator_senses": 49068
+    "non_predicator_senses": 49068,
+    "valency_senses": 6504,
+    "V1": 2435,
+    "V2": 3682,
+    "V3": 374,
+    "V4": 13
   },
-  "data_sha256": {
-    "data/dupb-nominal-explorer.json": "d5623a18f5a07f6671a6d198ee42c540f68622683570cc67b2ffbb87ec965ba3",
-    "data/dupb-nominal-explorer.jsonl": "5873bcc5dc382cb2f32c89a574e01c0e70c00ab51bc859c1b345714bd63347ac",
-    "data/metadata.json": "5cea7a55cddc3ac05161216d7eb47b048a0e5c1fdee075d761294629f7270acc",
-    "data/ROW_LINEAGE_ORCH213.tsv": "f21d8eb24c01ce215ca8515e7f9b28cc228b0a29bb92a5f318f2fba2890b73d4",
-    "data/entries.js": "0769b54c62f5c097ba96a93a3a098ada0f27e5c38c8995021f09581959223992",
-    "public_jsonl": "5873bcc5dc382cb2f32c89a574e01c0e70c00ab51bc859c1b345714bd63347ac"
+  "join": {
+    "direct_stable_uid": 6502,
+    "explicit_orch215_crosswalk": 2,
+    "heuristic": 0,
+    "unmatched": 0
   },
-  "valency": {
-    "included": false,
-    "state": "PREAUTHORIZED_PENDING_SUCCESSFUL_ORCH215_DEPLOYMENT_VERIFICATION"
-  }
+  "sha256": {
+    "data/dupb-nominal-explorer.json": "6704f6e1cfa675f9906a7c3951001684a7654b1d513f1607c2cede0ec79624ec",
+    "data/dupb-nominal-explorer.jsonl": "43d1ed7941c817323c86453ebc13a25bfbec8d0e5d9e09b3d6cc12f6212382ed",
+    "data/metadata.json": "0622dced5b54c047a9dca08596c95a6588c34a025727f0eca6b518c001846829",
+    "data/entries.js": "a06abf791ea9c8fdb7a67433f19b3c874b5fbe6b121505ffe4bc30796db25fae"
+  },
+  "authority_deployment": "ORCH_RECON_000219"
 }

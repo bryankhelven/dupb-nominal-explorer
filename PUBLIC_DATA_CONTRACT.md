@@ -1,74 +1,36 @@
-# DUPB Explorers — contrato público JSON / JSONL
+# DUPB Nominal Explorer — contrato público JSON / JSONL
 
-## Convenção de nomes
-
-### Entrada individual
-- `<lema>-nominal-explorer.json`
-- `<lema>-nominal-explorer.jsonl`
-- `<lema>-verbal-explorer.json`
-- `<lema>-verbal-explorer.jsonl`
-- `<lema>-multiclass-explorer.json`
-- `<lema>-multiclass-explorer.jsonl`
-
-Os diacríticos do lema são preservados. Apenas caracteres problemáticos para nomes de arquivo são substituídos.
-
-### Recurso completo
-- `dupb-nominal-explorer.json`
-- `dupb-nominal-explorer.jsonl`
-- `dupb-verbal-explorer.json`
-- `dupb-verbal-explorer.jsonl`
-- `dupb-multiclass-explorer.json`
-- `dupb-multiclass-explorer.jsonl`
-
-## Núcleo comum do JSON
+## Estrutura comum
 
 ```json
 {
-  "lemma": "...",
-  "entries": [
-    {
-      "entry": 1,
-      "senses": [
-        {
-          "sense": 1,
-          "description": "...",
-          "predicator": true
-        }
-      ]
-    }
-  ]
+  "lemma": "acordo",
+  "entry": 1,
+  "sense": 3,
+  "description": "...",
+  "predicator": true,
+  "valency": "V3",
+  "argument_structure": "ARG0 || ARG1 || ARG2"
 }
 ```
 
-O JSONL contém uma acepção por linha e acrescenta `lemma` e `entry` à mesma estrutura de acepção.
+`valency` e `argument_structure` aparecem somente em acepções `predicator: true`.
 
-## Campos específicos
+## Valência
 
-Verbal:
-- `verb_type`
-- `semantic_class`, quando disponível
-- `flags`, quando não vazio
+- `V1`, `V2`, `V3`, `V4`: número de posições argumentais da acepção.
+- `argument_structure`: estrutura terminal congelada pela authority nominal de valência.
+- Todas as 6.504 acepções predicadoras públicas possuem valência.
+- A projeção pública é feita por identidade estável de sentido; não há matching por lema.
 
-Multi-Class:
-- `pos`
-- `pos_label`
-- `source_text` somente nos 15 casos sem glossa isolada disponível
+## Acepções não predicadoras
 
-## Acepções sem número
+Acepções `predicator: false` não recebem `valency` nem `argument_structure`.
 
-- `sense` é inteiro quando a acepção possui número explícito.
-- `sense: null` é usado quando a autoridade não fornece número.
-- `sense_label: "IMPLICIT"` preserva os 18 casos Multi-Class explicitamente marcados como implícitos.
+## JSON
 
-## Campos internos removidos do download público padrão
+O JSON agrupa as acepções por lema e por entrada lexicográfica.
 
-- `host_id`
-- `source_surface`
-- `source_unit_id`
-- `source_gloss_disposition`
-- `sense_count`
-- `predicator_count`
-- `non_predicator_count`
-- `pos_counts`
+## JSONL
 
-Eles não são necessários para o uso normal do recurso e não fazem parte do contrato público padrão.
+O JSONL contém uma acepção por linha e inclui `lemma` e `entry`.
