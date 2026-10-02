@@ -1,10 +1,10 @@
 {
   "repository_name_recommended": "dupb-nominal-explorer",
-  "source_public_head": "1cca1e781ee34eb31789001e19cd9fed0089c31b",
-  "candidate_type": "VALENCY_UI_INTEGRATION",
+  "source_public_head": "5e0cf09e1c700b74990f79e95377cdba30b5eaeb",
+  "candidate_type": "INCREMENTAL_ROLE_AUTHORITY_PUBLICATION",
   "authority_population": "ORCH_RECON_000215",
   "authority_valency": "ORCH_RECON_000211",
-  "deployment_authorized": false,
+  "deployment_authorized": true,
   "scientific_counts": {
     "lemmas": 33508,
     "senses": 55572,
@@ -25,7 +25,27 @@
   "sha256": {
     "data/dupb-nominal-explorer.json": "6704f6e1cfa675f9906a7c3951001684a7654b1d513f1607c2cede0ec79624ec",
     "data/dupb-nominal-explorer.jsonl": "43d1ed7941c817323c86453ebc13a25bfbec8d0e5d9e09b3d6cc12f6212382ed",
-    "data/metadata.json": "47d5e1d73e8f5f5a55cea7838e8ab4d63319285a5af33977557ec369277a244e",
-    "data/entries.js": "28c69bf09aa9cf84594a7794330193921859894af04307d76ad3d25c9cf4ae84"
-  }
+    "data/metadata.json": "186c4142722ecee3fdfd6790eeac21e19a93a14ffc3cbe794edbe35047a4192a",
+    "data/entries.js": "b47d6ed4370d6a8ebc6efe7d64d108447108fb9a8f04181b2cf92d2c1ee433be"
+  },
+  "authority_role": "ORCH_RECON_000234",
+  "authority_role_publication": "ORCH_RECON_000236",
+  "postdeploy_audit_authority": "ORCH_RECON_000239",
+  "deployment_status": "GREEN_DEPLOYED",
+  "deployment_commit": "8db513b887928d7d4c6795de1117367056cc3be7",
+  "role_scientific_counts": {
+    "terminal_senses": 6017,
+    "terminal_arguments": 10114,
+    "pending_senses": 487,
+    "pending_arguments": 859,
+    "pending_backfill": 0
+  },
+  "role_sha256": {
+    "data/dupb-nominal-role-authority.json": "ac5d5ef435676d5d67521b17d85a94cf20aa52645a45c2e32a7ed19437519f7d",
+    "data/dupb-nominal-role-authority.jsonl": "22d7b3b0df2bf82d9a321e99bbd3d18d268fdf5471e405318014fe062d2165cb",
+    "data/dupb-nominal-role-authority.tsv": "95a0c0628227f57cc770c032042627f2ad62db435fdecf3dea1a1a55ab178765",
+    "data/role-authority.js": "ebf50d9a602af43356f8571e5ff0641fd66f162c6e9c59830a6fb6ac247ad0bf",
+    "app.js": "18a47829476828e49f6ec1a79ffd3ca07e2dfd970fdcc37b871274276cb1d987"
+  },
+  "authority_deployment": "ORCH_RECON_000236"
 }

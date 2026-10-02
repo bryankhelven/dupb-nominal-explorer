@@ -14,7 +14,7 @@
   "paraphrased_text": true,
   "audit_authority": "ORCH_RECON_000211",
   "audit_content_patches_applied": 1782,
-  "deployment_state": "INCREMENTAL_ROLE_PUBLICATION_CANDIDATE",
+  "deployment_state": "INCREMENTAL_ROLE_PUBLICATION_GREEN_DEPLOYED",
   "predeploy_placeholder_corrective_009": "CLOSED_GREEN",
   "literal_DUPB_placeholder_count": 0,
   "demonologia_to_demonstracao_public_headword_correction": "9/9",
@@ -45,5 +45,8 @@
   "role_terminal_arguments": 10114,
   "role_pending_senses": 487,
   "role_pending_arguments": 859,
-  "role_projection_policy": "TERMINAL_ONLY_NO_BACKFILL"
+  "role_projection_policy": "TERMINAL_ONLY_NO_BACKFILL",
+  "deployment_commit": "8db513b887928d7d4c6795de1117367056cc3be7",
+  "deployment_authority": "ORCH_RECON_000236",
+  "postdeploy_audit_authority": "ORCH_RECON_000239"
 }
