@@ -4,7 +4,7 @@
   "candidate_type": "VALENCY_UI_INTEGRATION",
   "authority_population": "ORCH_RECON_000215",
   "authority_valency": "ORCH_RECON_000211",
-  "deployment_authorized": true,
+  "deployment_authorized": false,
   "scientific_counts": {
     "lemmas": 33508,
     "senses": 55572,
@@ -25,8 +25,7 @@
   "sha256": {
     "data/dupb-nominal-explorer.json": "6704f6e1cfa675f9906a7c3951001684a7654b1d513f1607c2cede0ec79624ec",
     "data/dupb-nominal-explorer.jsonl": "43d1ed7941c817323c86453ebc13a25bfbec8d0e5d9e09b3d6cc12f6212382ed",
-    "data/metadata.json": "0622dced5b54c047a9dca08596c95a6588c34a025727f0eca6b518c001846829",
-    "data/entries.js": "a06abf791ea9c8fdb7a67433f19b3c874b5fbe6b121505ffe4bc30796db25fae"
-  },
-  "authority_deployment": "ORCH_RECON_000219"
+    "data/metadata.json": "47d5e1d73e8f5f5a55cea7838e8ab4d63319285a5af33977557ec369277a244e",
+    "data/entries.js": "28c69bf09aa9cf84594a7794330193921859894af04307d76ad3d25c9cf4ae84"
+  }
 }
