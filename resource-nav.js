@@ -1,18 +1,1 @@
-(()=>{
-const resources=[
-['https://bryankhelven.github.io/dupb-nominal-explorer/','Nomes','nominal'],
-['https://bryankhelven.github.io/dupb-verbal-explorer/','Verbos','verbal'],
-['https://bryankhelven.github.io/dupb-multiclass-explorer/','Multiclasses','multi']
-];
-document.addEventListener('DOMContentLoaded',()=>{
-  const top=document.querySelector('.topbar');
-  const nav=top?.querySelector('nav');
-  if(!top||!nav)return;
-  if(top.querySelector('.resource-switch'))return;
-  const sw=document.createElement('div');
-  sw.className='resource-switch';
-  sw.setAttribute('aria-label','Recursos DUPB');
-  sw.innerHTML=resources.map(([url,label,key])=>`<a href="${url}" class="${key==='nominal'?'active':''}">${label}</a>`).join('');
-  top.insertBefore(sw,nav);
-});
-})();
+(()=>{const resources=[['https://bryankhelven.github.io/dupb-nominal-explorer/','Nomes','nominal'],['https://bryankhelven.github.io/dupb-verbal-explorer/','Verbos','verbal'],['https://bryankhelven.github.io/dupb-multiclass-explorer/','Multiclasses','multi']];document.addEventListener('DOMContentLoaded',()=>{const top=document.querySelector('.topbar'),nav=top?.querySelector('nav');if(!top||!nav)return;if(!top.querySelector('.resource-switch')){const sw=document.createElement('div');sw.className='resource-switch';sw.setAttribute('aria-label','Recursos DUPB');sw.innerHTML=resources.map(([url,label,key])=>`<a href="${url}" class="${key==='nominal'?'active':''}">${label}</a>`).join('');top.insertBefore(sw,nav)}if(!nav.querySelector('[data-provenance-link]')){const a=document.createElement('a');a.href=location.pathname.includes('/about/provenance')?'./':'about/provenance/';a.textContent='Provenance';a.dataset.provenanceLink='1';const theme=nav.querySelector('[data-theme-toggle]');nav.insertBefore(a,theme||null)}});})();
