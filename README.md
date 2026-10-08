@@ -14,7 +14,6 @@ A versão publicada contém:
 - **10.973/10.973** argumentos com papel semântico em português;
 - **0** acepções/argumentos pendentes na camada nominal-role.
 
-Authority nominal role-level: `ORCH_RECON_000272`.
 
 ## Funcionalidades
 
@@ -28,7 +27,6 @@ Authority nominal role-level: `ORCH_RECON_000272`.
 
 ## Provenance
 
-A auditoria exaustiva `ROLESET_AND_VALENCY_PROVENANCE_CENSUS` permanece obrigatória pós-publicação para 6.504 sentidos e 10.973 argumentos. Isso não altera o fechamento científico/publicação ORCH272.
 
 ## Autoria
 

@@ -1,36 +1,47 @@
-# DUPB Nominal Explorer — contrato público JSON / JSONL
+# DUPB Nominal Explorer: contrato público de dados
 
-## Estrutura comum
+Os arquivos públicos contêm apenas informação linguística e identificadores públicos estáveis.
 
-```json
-{
-  "lemma": "acordo",
-  "entry": 1,
-  "sense": 3,
-  "description": "...",
-  "predicator": true,
-  "valency": "V3",
-  "argument_structure": "ARG0 || ARG1 || ARG2"
-}
-```
+## Acepção
 
-`valency` e `argument_structure` aparecem somente em acepções `predicator: true`.
+Cada acepção contém:
+sense_id
+sense
+description
+predicator
+predicator_label
 
-## Valência
+Acepções predicadoras também contêm:
+valency
+argument_structure
+arguments
 
-- `V1`, `V2`, `V3`, `V4`: número de posições argumentais da acepção.
-- `argument_structure`: estrutura terminal congelada pela authority nominal de valência.
-- Todas as 6.504 acepções predicadoras públicas possuem valência.
-- A projeção pública é feita por identidade estável de sentido; não há matching por lema.
+## Argumento
 
-## Acepções não predicadoras
+Cada argumento contém:
+arg_slot
+role_pt
+semantic_definition
 
-Acepções `predicator: false` não recebem `valency` nem `argument_structure`.
+Os exports de argumentos acrescentam:
+argument_id
+sense_id
+lemma
+entry
+sense
+valency
 
-## JSON
+## Identificadores
 
-O JSON agrupa as acepções por lema e por entrada lexicográfica.
+`sense_id` é um identificador público derivado de lema, entrada e número da acepção.
+`argument_id` acrescenta o slot ARG ao `sense_id`.
 
-## JSONL
+Identificadores históricos baseados em linhas, blocos, unidades OCR ou locators internos não fazem parte do contrato público.
 
-O JSONL contém uma acepção por linha e inclui `lemma` e `entry`.
+## Proveniência
+
+A proveniência destinada ao leitor é apresentada na página Provenance em linguagem humana.
+
+ORCH, SRC, nomes de lotes, authorities internas, localizadores, status de adjudicação, confidence de pipeline, registros brutos de decisão e demais metadados operacionais não fazem parte dos datasets públicos.
+
+A trilha técnica completa é preservada somente nos pacotes privados de auditoria.

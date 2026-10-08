@@ -1,30 +1,15 @@
 {
   "release": "1",
-  "date": "4 out. 2026",
   "total_lemmas": 33508,
-  "has_predicator_lemmas": 3794,
-  "n_only_lemmas": 29714,
   "senses": 55572,
   "predicator_senses": 6504,
   "non_predicator_senses": 49068,
   "valency_senses": 6504,
-  "valency_v1": 2435,
-  "valency_v2": 3682,
-  "valency_v3": 374,
-  "valency_v4": 13,
-  "dataset_sha256": "27ca64e87cc40fc95c41c895529d04b8120d77243a12123c815c3addde9c6dfe",
-  "author": "Bryan Khelven",
-  "email": "bryankhelven@ieee.org",
-  "role_terminal_senses": 6504,
-  "role_terminal_arguments": 10973,
-  "role_pending_senses": 0,
-  "role_pending_arguments": 0,
-  "role_authority": "ORCH_RECON_000272",
-  "role_dataset_json_sha256": "cf41a90d39f96189bc6d53a2107b66c21d1d3cfdd51e68e6ae168d1649adbf83",
-  "role_dataset_jsonl_sha256": "98f8f2d1606ca693ea989bdfc0a92b1f957cd608d84dd4425c95ef7462064662",
-  "role_dataset_tsv_sha256": "5fa0d1ef9058c23f4254ed262818ca0ccd4625aad87dbad89959580cd0785f14",
-  "role_argument_dataset_json_sha256": "8f44aa0f13055b3b2c40be16309137c57208cf0222bf0e70376a5436c6527e89",
-  "role_argument_dataset_jsonl_sha256": "3559c7c315e6ef98a878e387caac828b3bfd00900423135b0ebacfc0af5a6122",
-  "role_argument_dataset_tsv_sha256": "e3c48acb884aad8367ee2f6852cc3adb226288517f5cb9185012616827bf0f2e",
-  "role_provenance_audit_status": "POST_PUBLICATION_REQUIRED"
+  "valency_distribution": {
+    "V1": 2435,
+    "V2": 3682,
+    "V3": 374,
+    "V4": 13
+  },
+  "argument_rows": 10973
 }

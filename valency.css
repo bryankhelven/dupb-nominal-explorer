@@ -1,5 +1,5 @@
 
-/* Valency UI — ORCH215 candidate */
+/* Valency UI */
 .badges{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .badge.valency{font-weight:850;letter-spacing:.04em;border:1px solid currentColor;background:transparent}
 .valency-box{margin-top:12px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
